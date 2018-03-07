@@ -3,4 +3,19 @@
     Welcome {{name}}!
   </h1>
   <input type="text" [value]="name">
+  <input type="text" [(ngModel)]="name">
+  <br>
+  <a [href]="url">yeee</a>
+  <button (click)="try()">try it</button>
+
+  <div>
+    <h3>P1</h3>
+    <app-practice1></app-practice1>
+  </div>
+
+  <div>
+    <h3>P2</h3>
+    <app-practice2></app-practice2>
+  </div>
+
 </div>
