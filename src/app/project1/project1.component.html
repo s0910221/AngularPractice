@@ -1,0 +1,17 @@
+English
+<input type="text" [(ngModel)]="english"> Chinese
+<input type="text" [(ngModel)]="chinese">
+<button (click)="addWord()">Submit</button>
+<br> Filter
+<input type="text" [(ngModel)]="criteria">
+
+<table id="customers">
+  <tr>
+    <th>English</th>
+    <th>Chinese</th>
+  </tr>
+  <tr *ngFor="let dic of dics | filterByImpure:['english']:criteria">
+    <td>{{dic.english}}</td>
+    <td>{{dic.chinese}}</td>
+  </tr>
+</table>
