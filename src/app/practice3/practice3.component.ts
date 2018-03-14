@@ -12,10 +12,6 @@ export class Practice3Component implements OnInit {
   ];
   nums: number[] = [];
   now = new Date();
-  aaa: Account = {
-    account: '123',
-    password: '555'
-  };
 
   constructor() {
     for (let i = 10; i <= 80; i += 10) {

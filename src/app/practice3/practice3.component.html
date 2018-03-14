@@ -1,9 +1,11 @@
-<ul>
-  <li *ngFor="let u of users">{{u['name']}}</li>
-</ul>
-<ul>
-  <li *ngFor="let n of nums">{{n}}分</li>
-</ul>
-{{now|date:'yyyy-MM-dd'}}
-<p>{{ 'example' | repeat: 3: '@' }}</p> <!-- Output: "example@example@example" -->
-{{aaa|json}}
+<div>
+  <h3>P3</h3>
+  <ul>
+    <li *ngFor="let u of users">{{u['name']}}</li>
+  </ul>
+  <ul>
+    <li *ngFor="let n of nums">{{n}}分</li>
+  </ul>
+  {{now|date:'yyyy-MM-dd'}}
+  <p>{{ 'example' | repeat: 3: '@' }}</p>
+</div>
