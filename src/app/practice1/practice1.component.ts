@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BmiService } from '../bmi.service';
 
 @Component({
   selector: 'app-practice1',
@@ -10,7 +11,7 @@ export class Practice1Component implements OnInit {
   twMoney = 0;
   radius = 0;
 
-  constructor() { }
+  constructor(private bmiService: BmiService) { }
 
   ngOnInit() {
   }

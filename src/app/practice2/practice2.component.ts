@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { BmiService } from '../bmi.service';
 
 @Component({
   selector: 'app-practice2',
@@ -10,8 +11,9 @@ export class Practice2Component implements OnInit {
   @Output() changeGrade: EventEmitter<number> = new EventEmitter<number>();
   grade = 0;
 
-  constructor() { }
+  constructor(private bmiService: BmiService) { }
 
   ngOnInit() {
+    this.bmiService.pub_temp1 = 99;
   }
 }

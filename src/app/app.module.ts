@@ -1,3 +1,4 @@
+import { BmiService } from './bmi.service';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -17,6 +18,9 @@ import { InputButtonComponent } from './input-button/input-button.component';
 import { Practice6Component } from './practice6/practice6.component';
 import { HightlightDirective } from './hightlight.directive';
 import { Practice61Component } from './practice6-1/practice6-1.component';
+import { DyclassComponent } from './dyclass/dyclass.component';
+import { Jq1Component } from './jq1/jq1.component';
+import { Practice7Component } from './practice7/practice7.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,10 @@ import { Practice61Component } from './practice6-1/practice6-1.component';
     InputButtonComponent,
     Practice6Component,
     HightlightDirective,
-    Practice61Component
+    Practice61Component,
+    DyclassComponent,
+    Jq1Component,
+    Practice7Component
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,7 @@ import { Practice61Component } from './practice6-1/practice6-1.component';
     AppRoutingModule,
     NgPipesModule
   ],
-  providers: [],
+  providers: [BmiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
