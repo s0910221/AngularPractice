@@ -1,0 +1,15 @@
+<p>
+  callhttp works!
+</p>
+<button (click)="get()">get</button>
+<pre>
+{{getData|json}}  
+</pre>
+<br>
+
+
+<input type="text" [(ngModel)]="book.title">
+<br>
+<input type="text" [(ngModel)]="book.author">
+<br>
+<button (click)="post_data()">submit</button>

@@ -1,8 +1,10 @@
+import { HttpService } from './http.service';
 import { BmiService } from './bmi.service';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { Practice1Component } from './practice1/practice1.component';
@@ -21,6 +23,8 @@ import { Practice61Component } from './practice6-1/practice6-1.component';
 import { DyclassComponent } from './dyclass/dyclass.component';
 import { Jq1Component } from './jq1/jq1.component';
 import { Practice7Component } from './practice7/practice7.component';
+import { CallhttpComponent } from './callhttp/callhttp.component';
+import { NgModelDrivenComponent } from './ng-model-driven/ng-model-driven.component';
 
 @NgModule({
   declarations: [
@@ -38,15 +42,19 @@ import { Practice7Component } from './practice7/practice7.component';
     Practice61Component,
     DyclassComponent,
     Jq1Component,
-    Practice7Component
+    Practice7Component,
+    CallhttpComponent,
+    NgModelDrivenComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
     NgPipesModule
   ],
-  providers: [BmiService],
+  providers: [HttpService, BmiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,4 @@
+import { NgModelDrivenComponent } from './ng-model-driven/ng-model-driven.component';
 import { DyclassComponent } from './dyclass/dyclass.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -10,6 +11,7 @@ import { Practice6Component } from './practice6/practice6.component';
 import { Practice61Component } from './practice6-1/practice6-1.component';
 import { Practice7Component } from './practice7/practice7.component';
 import { Jq1Component } from './jq1/jq1.component';
+import { CallhttpComponent } from './callhttp/callhttp.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'practice1', pathMatch: 'full' },
@@ -24,6 +26,8 @@ const routes: Routes = [
     { path: 'dyclass', component: DyclassComponent },
     { path: 'dyclass/:num1/:num2', component: DyclassComponent },
     { path: 'jq1', component: Jq1Component },
+    { path: 'callhttp', component: CallhttpComponent },
+    { path: 'ngmod', component: NgModelDrivenComponent },
     { path: '**', component: Practice61Component }
 ];
 

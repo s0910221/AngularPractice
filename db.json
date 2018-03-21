@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "t1",
+      "author": "typicode",
+      "id": 2
+    },
+    {
+      "title": "aaa",
+      "author": "me",
+      "id": 3
+    },
+    {
+      "title": "cpp",
+      "author": "me",
+      "id": 4
+    },
+    {
+      "title": "java",
+      "author": "me",
+      "id": 5
+    },
+    {
+      "title": "java",
+      "author": "me",
+      "hey": "hey",
+      "id": 6
+    },
+    {
+      "title": "e",
+      "author": "d2",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
